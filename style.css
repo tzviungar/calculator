@@ -58,5 +58,5 @@ body {
 .key.fn  { background: #5a6070; }
 .key.op  { background: #f59e0b; }
 .key.op.active { background: #fff; color: #f59e0b; }
-.key.eq  { background: #22c55e; }
+.key.eq  { background: #3b82f6; }
 .key.wide { grid-column: span 2; }
