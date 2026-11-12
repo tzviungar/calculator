@@ -8,6 +8,10 @@
 </head>
 <body>
   <main class="calculator">
+    <div class="toolbar">
+      <button class="mode-toggle" id="convToggle" aria-expanded="false" aria-controls="converter">💱 Currency</button>
+    </div>
+
     <div class="display">
       <div class="history" id="history"></div>
       <div class="current" id="current">0</div>
@@ -38,6 +42,19 @@
       <button class="key" data-action="decimal">.</button>
       <button class="key eq" data-action="equals">=</button>
     </div>
+
+    <section class="converter" id="converter" hidden>
+      <div class="conv-row">
+        <select id="convFrom" aria-label="Convert from"></select>
+        <button class="conv-swap" id="convSwap" aria-label="Swap currencies">⇄</button>
+        <select id="convTo" aria-label="Convert to"></select>
+      </div>
+      <div class="conv-result" id="convResult">Loading rates…</div>
+      <div class="conv-meta">
+        <span id="convRate"></span>
+        <button class="conv-use" id="convUse" disabled>Use result</button>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
