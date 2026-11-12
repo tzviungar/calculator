@@ -1,0 +1,62 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #1c1f26;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.calculator {
+  width: min(340px, 92vw);
+  background: #2a2e38;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+  text-align: right;
+  padding: 10px 6px 18px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.history {
+  min-height: 1.2em;
+  font-size: 0.95rem;
+  color: #8a90a0;
+}
+
+.current {
+  font-size: 2.8rem;
+  font-weight: 300;
+  word-break: break-all;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.key {
+  height: 64px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: #3a3f4b;
+  color: #fff;
+  transition: filter 0.1s, transform 0.05s;
+}
+
+.key:hover  { filter: brightness(1.15); }
+.key:active { transform: scale(0.96); }
+
+.key.fn  { background: #5a6070; }
+.key.op  { background: #f59e0b; }
+.key.op.active { background: #fff; color: #f59e0b; }
+.key.eq  { background: #22c55e; }
+.key.wide { grid-column: span 2; }
