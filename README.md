@@ -3,7 +3,9 @@
 A simple calculator built with plain HTML, CSS and JavaScript. No frameworks or build step.
 
 ## Use it
-Open `index.html` in a browser, or visit the GitHub Pages link once it's enabled.
+Live: https://tzviungar.github.io/calculator/
+
+Or open `index.html` in a browser.
 
 Keyboard shortcuts: numbers, `+ - * /`, `Enter` for equals, `Backspace` to delete, `Esc` to clear.
 
